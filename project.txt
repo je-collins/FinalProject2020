@@ -1,0 +1,23 @@
+node/react
+postgresql
+
+SUPERADMIN INTERFACE
+	| 
+	|
+	GET Event_Info FROM user_Admin
+	GET Event_Info FROM user_Participant
+
+ADMIN INTERFACE
+	|
+	| 
+	POST Indendent_Events
+	POST Event_Info
+		{ Event_Title, Event_Description, URL, Event_Start, Event_End, Address }
+
+PARTICIPANT INTERFACE
+	|
+	|
+	GET Event_Info BY (Event_Start, Event_End)
+	GET (TITLES, URL) BY Address FROM Event_Info
+
+jwt?

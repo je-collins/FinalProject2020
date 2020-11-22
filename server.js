@@ -4,7 +4,8 @@ const PORT = process.env.PORT || 8000;
 const bodyParser = require('body-parser');
 const app = express();
 
-const api = require('./routes/api');
+const users = require('./routes/users');
+const admin = require('./routes/admin');
 
 // Parses result to json
 app.use(
@@ -17,12 +18,17 @@ app.use(bodyParser.json());
 
 // CONNECT TO DB
 
+//const db = require('./models'); 
+//db.sequelize.sync();                // will cause crash as no mySQL server setup yet.
 
 // Route to Home
 app.get('/', (req, res) => {
-    console.log("Home Route.");
-    res.send('Home Route');
+    console.log("Main directory");
+    res.send('Home Page');
 });
+
+app.use('/users', users);
+app.use('/admin', admin);
 
 app.listen(PORT, function() {
     console.log("Server is running on Port: " + PORT)
