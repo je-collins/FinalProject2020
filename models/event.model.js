@@ -1,5 +1,7 @@
+const Sequelize = require("sequelize");
+
 module.exports = (sequelize, Sequelize) => {
-    const Event = sequelize.define("event", {
+    const Evnt = sequelize.define("event", {
       name: {
         type: Sequelize.STRING
       },
@@ -26,5 +28,5 @@ module.exports = (sequelize, Sequelize) => {
       }
     });
   
-    return Event;
+    return Evnt;
   };

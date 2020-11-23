@@ -17,9 +17,13 @@ app.use(
 app.use(bodyParser.json());
 
 // CONNECT TO DB
-
-//const db = require('./models'); 
-//db.sequelize.sync();                // will cause crash as no mySQL server setup yet.
+try {
+  const db = require('./models'); 
+  db.sequelize.sync();
+} catch (e) {
+  console.log("mySQL server likely failed to connect.");
+  //console.log(e);
+}
 
 // Route to Home
 app.get('/', (req, res) => {
