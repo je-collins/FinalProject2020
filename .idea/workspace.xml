@@ -1,13 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9366ecd8-fa3e-4fa0-9317-02ea7a74f2d4" name="Default Changelist" comment="" />
+    <list default="true" id="9366ecd8-fa3e-4fa0-9317-02ea7a74f2d4" name="Default Changelist" comment="added basic npx create-react-app folders and files">
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/Admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/SuperAdmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/SuperAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventswebsite/src/components/Users.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eventswebsite/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/eventswebsite/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eventswebsite/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/eventswebsite/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="notrealjohn" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kinJF63NmItX8njSogni8ac87f" />
@@ -18,6 +72,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -29,11 +84,60 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606192205559</updated>
-      <workItem from="1606192206618" duration="343000" />
+      <workItem from="1606192206618" duration="572000" />
+      <workItem from="1606357314169" duration="718000" />
+      <workItem from="1606865388680" duration="4106000" />
     </task>
+    <task id="LOCAL-00001" summary="added basic npx create-react-app folders and files">
+      <created>1606192740870</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606192740871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added basic npx create-react-app folders and files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basic npx create-react-app folders and files" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3833" y="475" key="FileChooserDialogImpl" timestamp="1606865759029">
+      <screen x="2560" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1273" y="475" key="FileChooserDialogImpl/2560.0.2498.1440/0.0.2498.1440@0.0.2498.1440" timestamp="1606364489159" />
+    <state x="3833" y="475" key="FileChooserDialogImpl/2560.0.2498.1440/0.0.2498.1440@2560.0.2498.1440" timestamp="1606865759029" />
+    <state x="1085" y="453" key="Vcs.Push.Dialog.v2" timestamp="1606192756046">
+      <screen x="0" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1085" y="453" key="Vcs.Push.Dialog.v2/2560.0.2498.1440/0.0.2498.1440@0.0.2498.1440" timestamp="1606192756046" />
   </component>
 </project>
