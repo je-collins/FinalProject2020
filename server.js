@@ -19,7 +19,10 @@ app.use(bodyParser.json());
 // CONNECT TO DB
 try {
   const db = require('./models'); 
-  db.sequelize.sync();
+  db.sequelize.sync({
+    // force:true     // WARNING DELETES ENTIRE DB, TESTING PURPOSES ONLY
+  });
+  console.log("Connected to database.");
 } catch (e) {
   console.log("mySQL server likely failed to connect.");
   //console.log(e);
@@ -34,6 +37,6 @@ app.get('/', (req, res) => {
 app.use('/users', users);
 app.use('/admin', admin);
 
-app.listen(PORT, function() {
+app.listen(PORT => {
     console.log("Server is running on Port: " + PORT)
 });

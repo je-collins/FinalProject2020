@@ -6,12 +6,13 @@ router.get('/', (req, res) => {
     res.send('Admin Main');
 });
 
-router.get('/test', (req, res) => {
-    res.send('Admin Test Route')
-    });
+router.post('/create', events.create);
 
-
-router.post('/', events.create);
 router.get('/:id', events.findOne);
-    
+router.get('/findall', events.findAll);
+
+router.get('/:author', events.findByAuthor);
+
+router.delete('/:id', events.delete);
+
 module.exports = router;
