@@ -29,7 +29,7 @@ db.sequelize.sync();
 
 require("./app/routes/events.routes")(app);
 require('./app/routes/users.routes')(app);
-require('./app/routes/passport')(passport);
+
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

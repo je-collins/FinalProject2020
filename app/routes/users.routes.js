@@ -9,14 +9,7 @@ module.exports = app => {
     router.post("/", users.create);
 
 
-
-    router.post('/login', passport.authenticate('local', {
-            successRedirect: '/dashboard',
-            failureRedirect: '/',
-            failureFlash: true },
-        function(req, res) {
-            res.redirect('/');
-        }));
+    router.post('/login',users.login)
 
     // Delete a User with id
     router.delete("/:id", users.delete);

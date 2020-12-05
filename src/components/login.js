@@ -12,7 +12,8 @@ export default class Login extends Component {
 
         this.state = {
             username: "",
-            password: ""
+            password: "",
+            status:"1"
         };
     }
 
@@ -38,17 +39,19 @@ export default class Login extends Component {
 
         UserDataService.login(data)
             .then(response => {
-
-                window.location.href = "/events"
+                if(response.status === (200))
+                     window.location.href = "/add"
                 this.setState({
                     username: response.data.username,
                     password: response.data.password,
                 });
                 console.log(response.data);
-
+                localStorage.setItem("username", response.data.username);
             })
             .catch(e => {
-                console.log(e);
+
+                window.location.href = "/login"
+                alert("Incorrect username/password.")
             });
     }
 

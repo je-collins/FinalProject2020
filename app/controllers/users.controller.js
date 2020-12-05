@@ -34,13 +34,33 @@ exports.create = (req, res) => {
 };
 
  //Log in
-exports.login = (req, res,next) => {
-   passport.authenticate('local',(err,user,info) => {
-        req.login(user,(err) =>{
-            if (err) { return res.status(403).json({err: err, authuser: user}); }
-            res.json(200, {err: null, authuser: user});
-        });
-        })(req,res,next);
+exports.login = (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+   User.findOne({
+       where:{username: username}
+   }).then(user =>{
+       if(!user)
+           return res.status(400).send({
+               message:"Incorrect Username"
+           })
+       if(user.password == password)
+       {
+
+           return res.status(200).send({
+               message: "Success"
+           })}
+       else
+           {
+           return res.status(400).send({
+               message: "Incorrect Password"
+           })
+       }
+   }).catch(err => {
+       res.status(400).send({
+           message: err.message
+       })
+   })
 };
 
 
