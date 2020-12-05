@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import {Link, Route, Switch} from 'react-router-dom'
+import AddEvent from "./components/add-event.component";
+import Register from "./components/register";
+import Login from './components/login'
+
+class App extends Component {
+  render() {
+    return (
+        <div>
+          <nav className="navbar navbar-expand navbar-dark bg-dark">
+            <a href="/events" className="navbar-brand">
+              Event Manager
+            </a>
+            <div className="navbar-nav mr-auto">
+              <li className="nav-item">
+                  <Link to={"/events"} className="nav-link">
+                      Event List
+                  </Link>
+              </li>
+              <li className="nav-item">
+                  <Link to={"/add"} className="nav-link">
+                      Make An Event
+                  </Link>
+              </li>
+                <li className="nav-item">
+                    <Link to={"/register"} className="nav-link">
+                        Register
+                    </Link>
+                </li>
+            </div>
+          </nav>
+
+          <div className="container mt-3">
+            <Switch>
+
+              <Route exact path="/add" component={AddEvent} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/events" component={Events} />
+            </Switch>
+          </div>
+        </div>
+    );
+  }
 }
 
 export default App;
