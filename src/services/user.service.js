@@ -7,8 +7,8 @@ class UserDataService {
         return http.post("/users", data);
     }
 
-    get(data){
-        return http.get('/users', data)
+    login(data){
+        return http.post('/users/login', data)
    }
 
     delete(id) {

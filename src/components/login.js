@@ -36,7 +36,7 @@ export default class Login extends Component {
             password: this.state.password,
         };
 
-        UserDataService.create(data)
+        UserDataService.login(data)
             .then(response => {
 
                 window.location.href = "/events"
