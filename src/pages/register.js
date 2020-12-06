@@ -94,7 +94,7 @@ export default class Register extends Component {
                     />
                 </div>
 
-                <button onClick={this.login} type="submit" className="btn btn-primary btn-block">Submit</button>
+                <button onClick={this.register} type="submit" className="btn btn-primary btn-block">Submit</button>
                
                 <p className="text-right">
                     Already a user? <a href="/">Login.</a>
