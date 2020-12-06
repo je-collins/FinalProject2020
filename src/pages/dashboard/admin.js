@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import UserDataService from "../services/user.service";
+import UserDataService from "../../services/user.service";
 import { Table } from 'react-bootstrap';
 
 

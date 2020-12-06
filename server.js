@@ -1,4 +1,3 @@
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -15,7 +14,7 @@ app.use(passport.session());
 app.use(express.static(path));
 
 var corsOptions = {
-    origin: "http://localhost:8081"
+    origin: "http://localhost:3306"
 };
 
 app.use(cors(corsOptions));
