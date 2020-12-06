@@ -25,9 +25,15 @@ module.exports = (sequelize, Sequelize) => {
         address: {
             type: Sequelize.STRING
         },
+        city: {
+            type: Sequelize.TEXT
+        },
         approved: {
             type: Sequelize.BOOLEAN
-        }
+        },
+        attending: {
+            type: Sequelize.STRING
+        },
     });
 
     return Event;
